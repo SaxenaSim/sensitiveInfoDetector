@@ -62,3 +62,20 @@ To build the package as a wheel file locally for distribution and installation, 
 ```bash
  python setup.py sdist bdist_wheel
  ```
+
+## Releasing to PyPI
+
+To release the package to the Python Package Index (PyPI) repository publicly for broader usage, follow these steps:
+
+1. Sign up for an account on PyPI ([https://pypi.org/](https://pypi.org/)).
+2. Install twine if not already installed:
+
+    ```bash
+    pip install twine
+    ```
+
+3. Upload your package to PyPI using twine:
+
+    ```bash
+    twine upload dist/*
+    ```
